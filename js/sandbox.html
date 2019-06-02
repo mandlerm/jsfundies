@@ -7,14 +7,12 @@
 
 <script>
 
-  const race = '100m dash';
-  const winners = ['Dash Incredible', 'Sonic Hedgehog', 'Super Mario'];
+  function calculateBill(total, tax = 0.13, tip = 0.15) {
+    return total + (total * tax) + (total * tip);
+  }
 
-  const win = winners.map((winner, i) => ({ name: winner, race: race, place: i+1}));
-
-  const ages = [23, 35, 39, 11, 54, 98, 17, 15, 67];
-
-  const old = ages.filter(age => age > 60);
+  const totalBill = calculateBill(100, null, 0.25);
+  console.log(totalBill);
 </script>
 </body>
 </html>

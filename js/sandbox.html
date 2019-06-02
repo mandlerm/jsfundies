@@ -6,19 +6,15 @@
 
 
 <script>
-  let winner = false;
-  let points = 50;
-  const key = 'abc123';
-  (function(){
-    var name = "Melissa";
-  })();
+  for (var i = 0; i < 10; i++) {
+    console.log(i);
+  }
 
-
-  if(points > 40){
-    console.log("It ran1");
-    let winner = true;
-
-    console.log(winner);
+  for (let j = 20; j < 30; j++) {
+    console.log(j);
+    setTimeout(function(){
+      console.log('The number is ' + j);
+    }, 1000);
   }
 </script>
 </body>

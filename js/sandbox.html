@@ -7,15 +7,14 @@
 
 <script>
 
-  const names = ['melissa', 'austin', 'bella' ];
+  const race = '100m dash';
+  const winners = ['Dash Incredible', 'Sonic Hedgehog', 'Super Mario'];
 
-  // const fullNames = names.map(function(name){
-  //   return `${name} Amaya`;
-  // })
+  const win = winners.map((winner, i) => ({ name: winner, race: race, place: i+1}));
 
-  const fullNames2 = names.map((name) => `${name} Amaya`);
-  console.log(fullNames2);
+  const ages = [23, 35, 39, 11, 54, 98, 17, 15, 67];
 
+  const old = ages.filter(age => age > 60);
 </script>
 </body>
 </html>

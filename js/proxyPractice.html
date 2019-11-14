@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      const person = {name: 'Melissa', age: 18}
+      const personProxy = new Proxy(person, {
+        get(target, name) {
+          return ('Hello ' + target[name]+'-san')
+        }
+
+      })
+
+      // personProxy.name = "Mel"
+    </script>
+
+  </body>
+</html>
